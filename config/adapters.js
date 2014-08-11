@@ -17,7 +17,7 @@ module.exports.adapters = {
     'default': process.env.NODE_ENV || 'development',
 
     development: {
-        module: 'sails-mysql',
+        module: 'sails-disk',
         host: 'localhost',
         user: 'todouser',
         password: 'todopass',
@@ -28,7 +28,7 @@ module.exports.adapters = {
     },
 
     production: {
-        module: 'sails-mysql',
+        module: 'sails-disk',
         host: process.env.MYSQLS_HOSTNAME,
         user: process.env.MYSQLS_USERNAME,
         password: process.env.MYSQLS_PASSWORD,
